@@ -6,7 +6,7 @@ import { Category } from '@shared/schema';
 import { useAuth } from '@/hooks/use-auth';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import logoSvg from "@assets/image_1744271751032.png";
+import logoSvg from "@assets/Screenshot_2025-04-10_132537-removebg-preview.png";
 
 export default function Header() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -69,8 +69,9 @@ export default function Header() {
       {/* Logo and Search */}
       <div className="py-3 border-b">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <Link href="/" className="flex items-center">
-            <img src={logoSvg} alt="LatestNewsMedia Logo" className="h-14" />
+          <Link href="/" className="flex items-center space-x-3">
+            <img src={logoSvg} alt="News Media Logo" className="h-14" />
+            <span className="text-2xl font-bold text-primary">News Media</span>
           </Link>
           <div className="relative">
             {isSearchOpen ? (

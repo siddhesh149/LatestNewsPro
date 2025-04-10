@@ -25,7 +25,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
-import logoSvg from "@assets/image_1744271751032.png";
+import logoSvg from "@assets/Screenshot_2025-04-10_132537-removebg-preview.png";
 import { Helmet } from 'react-helmet';
 
 const loginSchema = z.object({
@@ -86,7 +86,7 @@ export default function AuthPage() {
   return (
     <>
       <Helmet>
-        <title>Sign In or Register - LatestNewsMedia</title>
+        <title>Sign In or Register - News Media</title>
       </Helmet>
       
       <Header />
@@ -96,7 +96,7 @@ export default function AuthPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl font-bold">Welcome to LatestNewsMedia</CardTitle>
+                <CardTitle className="text-2xl font-bold">Welcome to News Media</CardTitle>
                 <CardDescription>
                   Sign in to access your account or register to join our community.
                 </CardDescription>
@@ -217,12 +217,12 @@ export default function AuthPage() {
             </Card>
             
             <div className="flex flex-col justify-center items-center bg-primary-dark rounded-lg p-8 text-white">
-              <img src={logoSvg} alt="LatestNewsMedia Logo" className="h-24 mb-6" />
+              <img src={logoSvg} alt="News Media Logo" className="h-24 mb-6" />
               
               <h2 className="text-2xl font-bold mb-4">Stay Informed, Stay Ahead</h2>
               
               <p className="text-center mb-6">
-                Join LatestNewsMedia for real-time news updates, in-depth analysis, and exclusive content from around the world.
+                Join News Media for real-time news updates, in-depth analysis, and exclusive content from around the world.
               </p>
               
               <div className="space-y-4 w-full">
